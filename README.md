@@ -17,6 +17,7 @@ NumPy – Geometric and mathematical calculations
 VS Code – Code development and execution environment
 
 Files Included
+
 fatigue_detector_combined.py – Main script integrating all detection features
 eye_closure_detection.py – Detects continuous eye closure using EAR (Eye Aspect Ratio)
 yawn_detection.py – Detects yawning based on lip distance
@@ -41,9 +42,13 @@ Computes the tilt angle between eyes
 Triggers an alert if the tilt exceeds ±15°
 
 System Workflow
+
 Accesses webcam stream
+
 Detects facial landmarks using MediaPipe
+
 Calculates EAR, lip distance, and head tilt angle
+
 Compares measurements with set thresholds:
 EAR < 0.25 for ≥ 2 seconds
 3+ yawns in 60 seconds
